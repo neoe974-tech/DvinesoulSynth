@@ -1,0 +1,9 @@
+JUCE is intentionally not bundled in this repository.
+
+The project expects a JUCE checkout at ~/JUCE on the development machine.
+Create a sibling link with:
+
+    cd ~
+    ln -s ~/JUCE DvinesoulSynth/JUCE
+
+If the JUCE link already exists, do not recreate it.
