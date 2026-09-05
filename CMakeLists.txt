@@ -19,6 +19,8 @@ juce_add_plugin(DvinesoulSynth
     COPY_PLUGIN_AFTER_BUILD TRUE
 )
 
+juce_generate_juce_header(DvinesoulSynth)
+
 target_sources(DvinesoulSynth PRIVATE
     Source/PluginProcessor.cpp
     Source/PluginProcessor.h
