@@ -7,7 +7,7 @@ DvinesoulSynthAudioProcessorEditor::DvinesoulSynthAudioProcessorEditor (
     setSize (900, 560);
 
     title.setText ("DVINESOUL SYNTH", juce::dontSendNotification);
-    title.setFont (juce::Font (28.0f, juce::Font::bold));
+    title.setFont (juce::Font (juce::FontOptions{}.withHeight (28.0f).withStyle (juce::Font::bold)));
     title.setJustificationType (juce::Justification::centred);
     addAndMakeVisible (title);
 }
