@@ -42,3 +42,8 @@ juce::AudioProcessorEditor* DvinesoulSynthAudioProcessor::createEditor()
 {
     return new DvinesoulSynthAudioProcessorEditor (*this);
 }
+
+juce::AudioProcessor* JUCE_CALLTYPE createPluginFilter()
+{
+    return new DvinesoulSynthAudioProcessor();
+}
